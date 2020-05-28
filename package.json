@@ -1,0 +1,70 @@
+{
+  "name": "le-bao",
+  "description": "乐宝系列组件",
+  "version": "0.0.5",
+  "author": "Lele.Lee <jinwen_li2012@163.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "lib/lebao.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name lebao --dest lib packages/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11"
+  },
+  "bugs": {
+    "url": "https://github.com/ysg-lijinwen/le-baby/issues",
+    "email": "jinwen_li2012@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ysg-lijinwen/le-baby.git"
+  },
+  "contributors": [
+  ],
+  "homepage": "https://github.com/ysg-lijinwen/le-baby.git",
+  "keywords": [
+    "component",
+    "components",
+    "乐宝组件",
+    "优雅的按钮",
+    "vue",
+    "vue-component",
+    "Button",
+    "design"
+  ],
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
