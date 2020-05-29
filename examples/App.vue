@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
+    <button @click="getComponentDataSet()">获取指定组件信息</button>
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <le-sticky-head-list :list-data='bisData'></le-sticky-head-list>
-    <le-back-to-top></le-back-to-top>
+    <le-back-to-top ref="backToTop"></le-back-to-top>
   </div>
 </template>
 
@@ -215,6 +216,14 @@ export default {
           ]
         },
       ]
+    }
+  },
+  methods: {
+    getComponentDataSet() {
+      // let ele = document.getElementById("backToTop");
+      let ele = this.$refs.backToTop;
+      console.log(ele)
+      ele.getComponentProps
     }
   }
 }

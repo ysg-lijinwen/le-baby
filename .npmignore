@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+node_modules/.bin/
 build/
 config/
 static/
@@ -21,3 +22,11 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+#忽略目录
+examples/
+packages/
+public/
+#忽略指定文件
+vue.config.js
+babel.config.js
+*.map

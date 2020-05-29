@@ -1,4 +1,4 @@
-<template>
+<template ref="backToTop">
   <div class="backToTop" :style="'z-index: ' + zIndex" @click="backToTop" v-show="bVisible">
     <div class="icon"></div>
   </div>
@@ -35,6 +35,11 @@ export default {
     }
   },
   methods: {
+    getComponentProps() {
+      console.log("------child start-------------")
+      console.log(this._props)
+      console.log("------child end-------------")
+    },
     resetToTop() {
       window.pageYOffset = 0;
       document.documentElement.scrollTop = 0;
