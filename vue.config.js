@@ -1,7 +1,7 @@
-var path = require('path')
-var webpack = require('webpack')
+// var path = require('path')
+// var webpack = require('webpack')
  
-const NODE_ENV = process.env.NODE_ENV
+// const NODE_ENV = process.env.NODE_ENV
 
 module.exports = {
     pages: {
@@ -20,5 +20,6 @@ module.exports = {
           .end()
         .use('babel')
           .loader('babel-loader')
-    }
+    },
+    // devtool: 'source-map'   // 会生成对于调试的完整的.map文件，但同时也会减慢打包速度
   }

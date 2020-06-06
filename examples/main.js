@@ -1,9 +1,15 @@
 import Vue from 'vue'
+// import axios from 'axios'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import LeBao from '../packages'
+
 import App from './App.vue'
 
-import LeBaby from '../packages'
-
-Vue.use(LeBaby)
+Vue.use(ElementUI)
+Vue.use(LeBao)
+// Vue.use(axios)
+// Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
